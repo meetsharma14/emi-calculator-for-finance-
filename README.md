@@ -239,7 +239,7 @@ Loan approval system
 
 👩‍💻 Author
 
-Jyotsna Tiwari
+Meet Sharma
 
 B.Tech CSE Student
 Python Developer
