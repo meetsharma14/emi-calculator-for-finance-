@@ -1,7 +1,7 @@
 # emi-calculator-for-finance-
 🚲 Bike Finance App
 
-A Python GUI application built with Tkinter that helps finance companies calculate bike loan EMIs, generate repayment schedules, and export customer loan reports.
+A Python GUI application built using Tkinter that helps finance companies calculate bike loan EMIs, generate repayment schedules, and export customer loan reports.
 
 The application includes user authentication, EMI calculation, penalty handling, secured loan logic, and Excel report generation.
 
@@ -18,7 +18,7 @@ Users stored in a simple text file (users.txt)
 
 📊 EMI Calculator
 
-Calculate monthly EMI
+Calculates monthly EMI
 
 Supports:
 
@@ -32,7 +32,7 @@ Late EMI penalty calculation
 
 👤 Customer Details
 
-Stores important information:
+Stores important information such as:
 
 Customer name
 
@@ -76,51 +76,35 @@ https://www.equifax.co.in/
 
 🧾 Risk Analysis
 
-Based on CIBIL score, the system determines risk level:
+Based on CIBIL score, the system determines risk level.
 
 CIBIL Score	Risk Level
 > 750	Excellent
 650 – 750	Good
 550 – 649	Fair
 < 550	Low / Risk
-🖥️ Application Screens
+🖥️ Application Pages
 
-The app includes the following pages:
+The application includes:
 
-1️⃣ Splash Screen
-2️⃣ Login Page
-3️⃣ Register Page
-4️⃣ Forgot Password Page
-5️⃣ Dashboard
-6️⃣ EMI Calculator
-7️⃣ EMI Schedule & Report Export
+Splash Screen
+
+Login Page
+
+Register Page
+
+Forgot Password Page
+
+Dashboard
+
+EMI Calculator
+
+EMI Schedule & Report Export
 
 🧮 EMI Calculation Logic
-
-For Normal Loans
-
-𝐼
-𝑛
-𝑡
-𝑒
-𝑟
-𝑒
-𝑠
-𝑡
-=
-𝑃
-×
-𝑅
-×
-𝑀
-12
-×
-100
-Interest=
-12×100
-P×R×M
-	​
-
+Normal Loan
+Interest = (P × R × M) / (12 × 100)
+EMI = (P + Interest) / M
 
 Where:
 
@@ -130,30 +114,9 @@ R = Interest Rate
 
 M = Number of Months
 
-𝐸
-𝑀
-𝐼
-=
-𝑃
-+
-𝐼
-𝑛
-𝑡
-𝑒
-𝑟
-𝑒
-𝑠
-𝑡
-𝑀
-EMI=
-M
-P+Interest
-	​
+Secured Loan
 
-
-For Secured Loans
-
-Interest is calculated using 1.25% per 15 day block:
+Interest is calculated using 1.25% per 15-day block
 
 blocks = ceil(days_past / 15)
 interest = loan_amount * 0.0125 * blocks
@@ -161,8 +124,9 @@ interest = loan_amount * 0.0125 * blocks
 
 Penalty rules:
 
-• First 2 missed EMIs → 5% penalty on EMI
-• After that → 5% penalty on accumulated late due
+First 2 missed EMIs → 5% penalty on EMI
+
+After that → 5% penalty on accumulated late due
 
 🛠️ Technologies Used
 
@@ -170,9 +134,9 @@ Python 3
 
 Tkinter (GUI)
 
-Pillow (PIL) – Image support
+Pillow (PIL)
 
-OpenPyXL – Excel report generation
+OpenPyXL
 
 Math module
 
@@ -185,15 +149,15 @@ Install dependencies before running:
 pip install pillow openpyxl
 ▶️ How to Run
 
-1️⃣ Clone the repository
+Clone the repository
 
 git clone https://github.com/yourusername/bike-finance-app.git
 
-2️⃣ Navigate to the project folder
+Go to project folder
 
 cd bike-finance-app
 
-3️⃣ Run the program
+Run the application
 
 python app.py
 📂 Project Structure
@@ -205,9 +169,7 @@ bike-finance-app
 └── reports/
 📤 Exported Report Example
 
-The Excel report contains:
-
-Customer Info
+Customer Information
 
 Field	Value
 Name	Example
@@ -240,14 +202,12 @@ Loan approval system
 👩‍💻 Author
 
 Meet Sharma
-
 B.Tech CSE Student
-Python Developer
 
 ⭐ Contributing
 
 Pull requests are welcome.
-For major changes, please open an issue first to discuss what you would like to change.
+For major changes, please open an issue first.
 
 📜 License
 
